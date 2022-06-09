@@ -39,7 +39,6 @@ def lambda_handler(event, _):
 
 
 def create_response(code: int, body: Union[dict, str]):
-    json_content = {
+    return {
         "statusCode": code,
     }
-    return json_content

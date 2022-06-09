@@ -9,7 +9,7 @@ ssm_client = boto3.client('ssm')
 ssm_parameter_name = '/ec2-imagebuilder/latest'
 
 def lambda_handler(event, context):
-    logger.info('Printing event: {}'.format(event))
+    logger.info(f'Printing event: {event}')
     process_sns_event(event)
     return None
 
